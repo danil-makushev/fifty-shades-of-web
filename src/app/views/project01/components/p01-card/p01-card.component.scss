@@ -1,0 +1,31 @@
+:host {
+  flex: 0.5;
+  transition: flex 0.7s ease-in;
+
+  &.active {
+    flex: 6;
+
+    .card-title {
+      opacity: 1;
+    }
+  }
+}
+
+.card-container {
+  height: 90vh;
+  margin: 0.5em;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  border-radius: 10px;
+  color: white;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
